@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "onFocusChange",
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "dart.closingLabels": true
+}
