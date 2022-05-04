@@ -1,129 +1,102 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:http/http.dart' as http;
 
 class SocialIcons extends StatelessWidget {
   const SocialIcons({Key? key}) : super(key: key);
 
   static const iconSize = 33.0;
-  static const iconColor = Colors.blue;
+  static const iconColor = Colors.black87;
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        IconButton(
-          icon: const FaIcon(
-            FontAwesomeIcons.twitter,
-            size: iconSize,
-            color: iconColor,
-            semanticLabel: 'My Twitter account',
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          IconButton(
+            icon: const FaIcon(
+              FontAwesomeIcons.twitter,
+              size: iconSize,
+              color: iconColor,
+              semanticLabel: 'My Twitter account',
+            ),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://twitter.com/DimitryZub'),
+              );
+            },
           ),
-          onPressed: () {
-            launchUrl(
-              Uri.parse('https://twitter.com/DimitryZub'),
-            );
-          },
-        ),
-        IconButton(
-          icon: const FaIcon(
-            FontAwesomeIcons.linkedinIn,
-            size: iconSize,
-            color: iconColor,
-            semanticLabel: 'My LinkedIn account',
+          IconButton(
+            icon: const FaIcon(
+              FontAwesomeIcons.linkedinIn,
+              size: iconSize,
+              color: iconColor,
+              semanticLabel: 'My LinkedIn account',
+            ),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://www.linkedin.com/in/dmitriy-zub'),
+              );
+            },
           ),
-          onPressed: () {
-            launchUrl(
-              Uri.parse('https://www.linkedin.com/in/dmitriy-zub'),
-            );
-          },
-        ),
-        IconButton(
-          icon: const FaIcon(
-            FontAwesomeIcons.github,
-            size: iconSize,
-            color: iconColor,
-            semanticLabel: 'My GitHub account',
+          IconButton(
+            icon: const FaIcon(
+              FontAwesomeIcons.github,
+              size: iconSize,
+              color: iconColor,
+              semanticLabel: 'My GitHub account',
+            ),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/dimitryzub'),
+              );
+            },
           ),
-          onPressed: () {
-            launchUrl(
-              Uri.parse('https://github.com/dimitryzub'),
-            );
-          },
-        ),
-        IconButton(
-          icon: const FaIcon(
-            FontAwesomeIcons.medium,
-            size: iconSize,
-            color: iconColor,
-            semanticLabel: 'My Medium account',
+          IconButton(
+            icon: const FaIcon(
+              FontAwesomeIcons.medium,
+              size: iconSize,
+              color: iconColor,
+              semanticLabel: 'My Medium account',
+            ),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://dimitryzub.medium.com/'),
+              );
+            },
           ),
-          onPressed: () {
-            launchUrl(
-              Uri.parse('https://dimitryzub.medium.com/'),
-            );
-          },
-        ),
-        IconButton(
-          icon: const FaIcon(
-            FontAwesomeIcons.dev,
-            size: iconSize,
-            color: iconColor,
-            semanticLabel: 'My DevTo account',
+          IconButton(
+            icon: const FaIcon(
+              FontAwesomeIcons.dev,
+              size: iconSize,
+              color: iconColor,
+              semanticLabel: 'My DevTo account',
+            ),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://dev.to/dimitryzub'),
+              );
+            },
           ),
-          onPressed: () {
-            launchUrl(
-              Uri.parse('https://dev.to/dimitryzub'),
-            );
-          },
-        ),
-        IconButton(
-          icon: const FaIcon(
-            FontAwesomeIcons.youtube,
-            size: iconSize,
-            color: iconColor,
-            semanticLabel: 'My YouTube account',
+          IconButton(
+            icon: const FaIcon(
+              FontAwesomeIcons.youtube,
+              size: iconSize,
+              color: iconColor,
+              semanticLabel: 'My YouTube account',
+            ),
+            onPressed: () {
+              launchUrl(
+                Uri.parse(
+                    'https://www.youtube.com/channel/UClEr5pKL0gfo4uGVH4nWRYg'),
+              );
+            },
           ),
-          onPressed: () {
-            launchUrl(
-              Uri.parse(
-                  'https://www.youtube.com/channel/UClEr5pKL0gfo4uGVH4nWRYg'),
-            );
-          },
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
-
-// _launchURL() {
-//   List<String> urls = [
-//     'https://twitter.com/DimitryZub',
-//     'https://www.linkedin.com/in/dmitriy-zub',
-//     'https://dimitryzub.medium.com/',
-//     'https://github.com/dimitryzub/', 
-//     'https://www.youtube.com/channel/UClEr5pKL0gfo4uGVH4nWRYg',
-//     'https://dev.to/dimitryzub'
-//   ];
-
-//   for (var url in urls) {
-//     if (url.contains('twitter')) {
-//       launchUrl(Uri.parse(url));
-//     } else if (url.contains('linkedin')) {
-//       launchUrl(Uri.parse(url));
-//     } else if (url.contains('github')) {
-//       launchUrl(Uri.parse(url));
-//     } else if (url.contains('medium')) {
-//       launchUrl(Uri.parse(url));
-//     } else if (url.contains('dev')) {
-//       launchUrl(Uri.parse(url));
-//     } else if (url.contains('youtube')) {
-//       launchUrl(Uri.parse(url));
-//     } else {
-//       throw 'Could not launch $url';
-//     }
-//   }
-// }

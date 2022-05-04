@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mi_card_app/social_icons.dart';
 
-class ScoialProfiles extends StatelessWidget {
-  const ScoialProfiles({Key? key}) : super(key: key);
+class SocialProfiles extends StatelessWidget {
+  const SocialProfiles({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
