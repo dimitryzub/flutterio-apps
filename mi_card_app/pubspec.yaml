@@ -17,6 +17,7 @@ dev_dependencies:
     sdk: flutter
   font_awesome_flutter: ^10.1.0
   http: ^0.13.4
+  simple_animations: ^4.0.2
   url_launcher: ^6.1.0
 
 flutter:
