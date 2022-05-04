@@ -5,6 +5,15 @@ class ContactCards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      children: <Widget>[
+        Icon(
+          Icons.phone,
+        ),
+        Text(
+          "Twitter",
+        )
+      ],
+    );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'contact_info.dart';
 
 class MiddleInfo extends StatelessWidget {
   const MiddleInfo({Key? key}) : super(key: key);
@@ -17,13 +18,13 @@ class MiddleInfo extends StatelessWidget {
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const CircleAvatar(
+          children: const <Widget>[
+            CircleAvatar(
               radius: 60.0,
               backgroundImage: NetworkImage(
                   'https://images.pexels.com/users/avatars/18651040/dimitry-zub-845.jpeg?auto=compress&fit=crop&h=130&w=130&dpr=2'),
             ),
-            const Text(
+            Text(
               'Dmitriy Zub',
               style: TextStyle(
                 fontSize: 55,
@@ -32,7 +33,7 @@ class MiddleInfo extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            const Text(
+            Text(
               'Developer Advocate',
               style: TextStyle(
                 fontSize: 23,
@@ -40,20 +41,18 @@ class MiddleInfo extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            Container(
-              padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-              child: const Text(
-                'learning flutter/dart',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Mono',
-                  color: Colors.white,
-                ),
+            Text(
+              'learning flutter/dart',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: 'Mono',
+                color: Colors.white,
               ),
             ),
+            ContactCards()
           ],
         ),
       ),
     );
   }
-}
+
