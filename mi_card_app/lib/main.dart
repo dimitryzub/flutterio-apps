@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'middle_info.dart';
+import 'contact_info.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,10 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false, // removes debug label
       home: Scaffold(
-        backgroundColor: Colors.teal,
-        body: Container(),
+        body: MiddleInfo(),
       ),
     );
   }

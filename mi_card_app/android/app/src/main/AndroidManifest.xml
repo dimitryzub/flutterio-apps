@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dmzub.micard">
+    package="com.example.mi_card_app">
    <application
-        android:label="MiCard"
+        android:label="mi_card_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
