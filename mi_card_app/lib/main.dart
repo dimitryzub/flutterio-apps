@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'middle_info.dart';
-import 'contact_info.dart';
 
 void main() {
   runApp(const MyApp());

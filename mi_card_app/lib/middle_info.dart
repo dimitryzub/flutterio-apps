@@ -55,4 +55,4 @@ class MiddleInfo extends StatelessWidget {
       ),
     );
   }
-
+}
