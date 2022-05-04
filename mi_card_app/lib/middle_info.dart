@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'contact_info.dart';
+import 'social_profiles.dart';
 
 class MiddleInfo extends StatelessWidget {
   const MiddleInfo({Key? key}) : super(key: key);
@@ -49,7 +49,7 @@ class MiddleInfo extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            ContactCards()
+            ScoialProfiles()
           ],
         ),
       ),
